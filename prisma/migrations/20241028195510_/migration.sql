@@ -7,3 +7,6 @@ CREATE TABLE users (
 	role_id int DEFAULT 2 NOT NULL,
 	CONSTRAINT users_pk PRIMARY KEY (id)
 );
+
+-- CreateIndex
+CREATE UNIQUE INDEX "users_email_idx" ON "users"("email");
